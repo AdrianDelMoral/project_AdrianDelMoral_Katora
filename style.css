@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Titillium+Web:ital,wght@1,200&family=Vujahday+Script&display=swap');
+
+.alinear-centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+a {
+    font-size: 3rem;
+    letter-spacing: .6rem;
+    text-decoration: none;
+    color: #1d9b67;
+    -webkit-text-stroke: 2px #111;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.alinear-centro:nth-child(1) {
+    margin-top: 25rem;
+    letter-spacing: .6rem;
+}
+
+.alinear-centro div:nth-child(2) {
+    margin-top: 5rem;
+}
