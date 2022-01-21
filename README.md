@@ -1,2 +1,2 @@
-# project_AdrianDelMoral_Katora
-Project created and edited expressly for class practice
+# Project AdrianDelMoral Katora 
+## This project has been created and modified for an expressly class exercise.
