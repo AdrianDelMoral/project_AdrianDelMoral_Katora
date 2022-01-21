@@ -1,0 +1,835 @@
+:root {
+    --principal: #b38741;
+    --principalOscuro: #3b3224;
+    --amarillo: #d4af37;
+    --negro: #111;
+    --blanco: #fff;
+    --grisClaro: #333333;
+    --grisClaro2principal: #888888;
+    --bordes:#b8b8b8;
+    --grisOscuro: #1d1d1d;
+    --rojo: #ff0000;
+    --rojoClaro: #DC3545;
+    --azulClaro: #479AF1;
+    --verdeClaro: #28A745;
+    --tituloContactoPrincipal: 'Titillium Web', sans-serif;
+    --tituloContactoFormulario: 'Vujahday Script', cursive;
+}
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 99%;
+}
+
+/*--------*/
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    opacity: 1;
+    display: block !important;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
+    padding: 0;
+    animation: slide-down 0.7s;
+}
+
+.nav1 {
+    display: flex;
+    height: 1.5rem;
+    background-color: rgb(51, 51, 51);
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+}
+
+.nav1-1-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 68.75rem;
+}
+
+.nav1-2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25rem;
+    margin-right: 25rem;
+    justify-content: space-between;
+}
+
+.tituloMasBuscador {
+    border-bottom: 1px solid rgb(184, 184, 184);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.tituloPagina h1 {
+    font-size: 40px;
+    color: #393939;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+.buscadorPagina {
+    display: flex;
+}
+
+.alinearBuscador {
+    display: flex;
+    align-items: center;
+}
+
+.alinearBuscador div {
+    border: 1px solid rgb(184, 184, 184);
+}
+
+.allCategories {
+    width: 7.5rem;
+    margin-left: 25px;
+    height: 3rem;
+    border: none;
+}
+
+.barraEscribir {
+    width: 23rem;
+    height: 3rem;
+}
+
+.iconosCarritoCorazon {
+    display: flex;
+    flex-direction: row;
+}
+
+.iconosCarritoCorazon a {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.iconosCarritoCorazon a img {
+    width: 22px;
+    height: 23px;
+}
+
+.alinearBuscador input {
+    border-left: #888888;
+    border: none;
+    margin-left: 1rem;
+}
+
+.alinearBuscador button {
+    border: none;
+}
+
+.boton-Lupa {
+    background-color: #b38741;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-Lupa img {
+    height: 25px;
+    width: 25px;
+}
+
+.bg-menu-bar {
+    background-color: #fff;
+}
+
+.navHomeGaleryETC {
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+}
+
+.homeGaleryETC {
+    display: flex;
+}
+
+.homeGaleryETC ul li a {
+    position: relative;
+    font-size: 0.7125rem;
+    font-weight: 800;
+    color: #1d1d1d;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav-item {
+    padding: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav-item:hover {
+    transition: 1s;
+    cursor: pointer;
+    background-color: rgb(51, 51, 51);
+    color: var(--amarillo);
+}
+
+.nav-item:hover > .nav-link {
+    color: var(--amarillo);
+    transition: 1s;
+}
+
+.nav-link {
+    position: relative;
+    font-family: "Montserrat-Bold", sans-serif !important;
+    font-size: 0.8125rem;
+    color: #1d1d1d;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.lengMoneda {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    position: relative;
+    width: 7rem;
+}
+
+.welcomeMyAccount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    position: relative;
+    width: auto;
+}
+
+.welcomeUser a {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: "Montserrat-Regular", sans-serif;
+}
+
+/*---MONEDA--*/
+
+.moneda {
+    display: flex;
+    color: #fff;
+}
+
+.moneda p {
+    display: flex;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: "Montserrat-Regular", sans-serif;
+}
+
+.moneda>ul {
+    display: none;
+    margin-bottom: .5rem;
+    margin-right: 1rem;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: "Montserrat-Regular", sans-serif;
+}
+
+.moneda:hover>ul {
+    display: block;
+    position: absolute;
+    transition: 3s;
+}
+
+.monedaOpen {
+    padding: 1.7rem;
+    margin-left: -1.2rem;
+    width: 100px;
+    background-color: #fff;
+    box-shadow: 5px 10px 18px #888888;
+    color: #000;
+    transition: 3s;
+    margin-top: 1.6rem;
+}
+
+.monedaOpen li {
+    margin-bottom: .1rem;
+}
+
+.monedaOpen:hover {
+    display: block;
+}
+
+/*--LENGUAGE---*/
+
+.lenguage {
+    display: flex;
+    color: #fff;
+}
+
+.lenguage p {
+    display: flex;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: "Montserrat-Regular", sans-serif;
+}
+
+.lenguage ul {
+    display: none;
+}
+
+.lenguage:hover ul {
+    display: block;
+    position: absolute;
+    transition: 3s;
+}
+
+.lenguageOpen {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-right: 3rem;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 5px 10px 18px #888888;
+    color: #000;
+    transition: 3s;
+    margin-top: 1.6rem;
+}
+
+.lenguageOpen li a {
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: "Montserrat-Regular", sans-serif;
+}
+
+/*------*/
+
+.myAccount {
+    display: flex;
+    color: #fff;
+    margin-left: 1rem;
+    align-items: center;
+    position: relative;
+}
+
+.myAccount p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: "Montserrat-Regular", sans-serif;
+}
+
+.myAccount>ul {
+    position: absolute;
+    display: none;
+    margin-bottom: .5rem;
+    margin-right: 1rem;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: "Montserrat-Regular", sans-serif;
+    top: -3px;
+}
+
+.myAccount:hover>ul {
+    display: block;
+    position: absolute;
+    transition: 3s;
+}
+
+.myAccountOpen {
+    padding: 1.7rem;
+    margin-left: -4rem;
+    width: 100px;
+    background-color: #fff;
+    box-shadow: 5px 10px 18px #888888;
+    color: #000;
+    transition: 3s;
+    margin-top: 1.6rem;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: "Montserrat-Regular", sans-serif;
+}
+
+.myAccountOpen li {
+    margin: 1rem;
+}
+
+.myAccountOpen:hover {
+    display: block;
+}
+
+/*Home, Mega Menu, Shop...*/
+
+.homeGaleryETC ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.homeGaleryETC ul li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+/*section*/
+
+section{
+    margin-top: 10rem;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.tituloContact{
+    font-family: var(--tituloContactoPrincipal);
+    display: flex;
+    justify-content:flex-start;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+.tituloContactFormulario{
+    font-family: var(--tituloContactoFormulario);
+    display: flex;
+    justify-content:flex-start;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px){
+    .tituloContact{
+        display: flex;
+        justify-content:center;
+    }    
+}
+
+
+.descripcion{
+    margin-top: 1rem;
+    font-family: "Montserrat-Regular", sans-serif;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+@media (max-width: 768px){
+    .descripcion{
+        margin: 0 3rem;
+        text-align: justify;
+    }
+}
+
+.ancho {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+}
+
+/**Formulario contacto*/
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: 4rem auto;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 0 15px var(--principal);
+    /* background-color: gray; */
+}
+
+.formularioContactUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.formularioContactUs > input {
+    width: 100%;
+    margin: 5px 0;
+    height: 35px;
+    font-size: 17px;
+    text-align: center;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    border: 1px solid var(--bordes);
+}
+
+textarea {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 17px;
+    text-align: center;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    border: 1px solid var(--bordes);
+}
+.formularioContactUs .submitContactUs {
+    margin: 10px auto;
+    width: 120px;
+    background: var(--rojoClaro);
+    color: var(--blanco);
+    cursor: pointer;
+}
+.submitContactUs:hover{
+    background: tomato;
+}
+
+.formularioContactUs>:not(input) {
+    background-color: var(--grisClaro);
+    color: var(--blanco);
+    
+}
+
+.formularioContactUs textarea::placeholder{
+    color: var(--azulClaro);
+}
+
+.formularioContactUs [class="normalText"]::placeholder {
+    color: var(--verdeClaro);
+}
+
+.formularioContactUs input{
+    background-color: var(--grisClaro);
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        width: 90%;
+    }
+}
+/**Formulario contacto*/
+
+
+
+.div-boton {
+    color: white;
+    letter-spacing: 1px;
+    margin-left: 1rem;
+    font-family: "Montserrat-Bold", sans-serif;
+}
+
+.div-boton button {
+    width: 150px;
+    height: 43px;
+    background-color: #c48a2d;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 13px;
+    border: none;
+}
+.div-boton button:hover {
+    background-color: #745d38;
+    transition: 1s;
+}
+
+/*Footer*/
+footer {
+    padding-top: 100px;
+    padding-bottom: 2.188rem;
+    background-color: #f8f9fa;
+}
+
+.footerUp {
+    width: 100%;
+}
+
+.topFooter {
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    float: right;
+    height: 40px;
+    padding: 8px 98px 8px 8px;
+    width: 100%;
+    border-radius: 0;
+    outline: none!important;
+    border: 1px solid #ddd;
+}
+
+.formulario {
+    width: 25.4rem;
+    display: flex;
+}
+
+.letrasFooterTitle {
+    margin-right: 6rem;
+}
+
+.letrasFooterTitle h4 {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-weight: 700;
+    font-size: 1.3125rem;
+    margin-bottom: 1rem;
+}
+
+.letrasFooterTitle p {
+    font-family: "Montserrat-Regular", sans-serif;
+}
+
+.formulario > input {
+    float: right;
+    height: 40px;
+    padding: 8px 98px 8px 8px;
+    width: 100%;
+    border-radius: 0;
+    outline: none !important;
+    border: 1px solid #ddd;
+}
+
+.botonSubmit {
+    background-color: #b38741;
+    height: 40px;
+    width: 146px;
+    border: 0px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.subFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.titulosFooter{
+    font-family: "Montserrat-Bold", sans-serif;
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 15px;
+    margin-top: 5rem;
+}
+
+.footer-div {
+    margin-right: 5rem;
+}
+.footer-div ul li {
+    margin-bottom: 1rem;
+    font-family: "Montserrat-Regular", sans-serif;
+}
+
+.footer-div ul li a{
+    margin-bottom: 1rem;
+    font-family: "Montserrat-Regular", sans-serif;
+    text-decoration: none!important;
+    color: rgb(99, 99, 99);
+}
+.footer-div ul li a:hover{
+    margin-bottom: 1rem;
+    font-family: "Montserrat-Regular", sans-serif;
+    text-decoration: none!important;
+    color: #b38741;
+    transition: 1s;
+}
+
+.tituoPaginaFooter {
+    color: black;
+}
+
+.company {
+    padding-top: 3rem;
+    margin: 0;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgb(99, 99, 99);
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 950px) {
+    .divImagenes1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tituloMasBuscador {
+        border-bottom: 1px solid rgb(184, 184, 184);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /* margin-bottom: 0rem; */
+        padding: 1rem;
+        background-color: #fff;
+    }
+    .tituloMasBuscador {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        align-items: center;
+    }
+    .tituloPagina{
+        margin-bottom: 1rem;
+    }
+    .iconosCarritoCorazon {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+    }
+    .divImagenes {
+        margin-top: 20rem;
+        display: flex;
+        margin-bottom: 5rem;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section1 {
+        width: 950px;
+    }
+    .section3 {
+        width: 950px;
+    }
+
+    .divAnillo {
+        width: 30rem;
+        height: 30rem;
+        margin-top: 4rem;
+    }
+
+    .section5 {
+        padding-top: 250px;
+    }
+
+    .article4 {
+        background-color: #f4f4f4;
+        height: 70rem;
+        padding-bottom: 100px;
+        padding-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .alinearSection4 {
+        display: flex;
+        /* width: 100%; */
+        /* height: 100%; */
+        justify-content: center;
+        flex-direction: column;
+    }
+    .alinearSection4 {
+        display: flex;
+        /* width: 100%; */
+        /* height: 100%; */
+        justify-content: center;
+    }
+    
+    .section3 {
+        padding-top: 100px;
+        margin-top: 73rem;
+        margin-bottom: 10rem;
+    }
+    .optionsStore {
+        display: flex;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenes_ordenar_store {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cajas {
+        height: 32rem;
+    }
+    .imagenes1 {
+        height: 558.88px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .imagenesAlinear {
+        display: flex;
+        align-items: center;
+        width: 944px!important;
+        justify-content: center;
+    }
+    .imagenesAlinear {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .imagenesAlinear {
+        display: flex;
+        align-items: center;
+        width: 800px;
+        justify-content: center;
+    }
+
+    .section3 {
+        padding-top: 100px;
+        margin-top: 73rem;
+    }
+
+    .homeGaleryETC {
+        display: flex;
+        align-items: center;
+    }
+    
+    .topFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footerUp {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-item {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .letrasFooterTitle {
+        margin: 1rem 1rem 4rem 1rem;
+    }
+
+    .subFooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4rem;
+        flex-direction: column;
+    }
+}
