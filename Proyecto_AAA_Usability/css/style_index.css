@@ -32,6 +32,16 @@ html {
     /*borrar después*/
 }
 
+.lazyLoad {
+    width: 100%;
+    opacity: 0;
+}
+
+.visible {
+    transition: opacity 1000ms ease;
+    opacity: 1;
+}
+
 .grande {
     width: 100%;
     border: 1px solid;
